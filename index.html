@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Code Editor </title>
+  
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+
+  <header>
+    <div class="container row">
+      
+      <div class="brand">
+
+        <div class="logo"></div>
+
+        <div class="title">My Code Editor</div>
+      
+      </div>
+
+      <div class="row">
+        <button class="btn secondary" id="saveBtn" title="Save work locally"><span>Save</span></button>
+        <button class="btn secondary" id="loadBtn" title="Load work file"><span>Load</span></button>
+        <input id="openFile" type="file" accept="application/json" hidden>
+      </div>
+
+
+    </div>
+  </header>
+
+  <main>
+
+
+    <!-- Left panel: Task description and settings -->
+    
+
+    <!-- Middle: Editors and preview -->
+    <section class="stack" id="web-only">
+      <div id="webEditors" class="stack card panel">
+        <div class="row">
+          <h2>HTML / CSS / JS</h2>
+          <div class="row">
+            <button class="btn ok" id="runWeb">Run</button>
+            <button class="btn secondary" id="openPreview">Open preview in window</button>
+          </div>
+        </div>
+
+        <div class="tabs" id="webTabs" role="tablist" aria-label="Web editors">
+          <button class="tab active" role="tab" aria-selected="true" tabindex="0" data-pane="html">HTML</button>
+          <button class="tab" role="tab" aria-selected="false" tabindex="-1" data-pane="css">CSS</button>
+          <button class="tab" role="tab" aria-selected="false" tabindex="-1" data-pane="js">JavaScript</button>
+        </div>
+
+        <!-- Link each editor to a clear panel name -->
+        <div class="editor-wrap" data-pane="html"><div id="ed_html" class="editor"></div></div>
+        <div class="editor-wrap" data-pane="css" hidden><div id="ed_css" class="editor"></div></div>
+        <div class="editor-wrap" data-pane="js" hidden><div id="ed_js" class="editor"></div></div>
+
+        
+    </section>
+
+    <!-- Right: Output and log -->
+    <aside class="card panel stack">
+      <div class="stack">
+          <h3>Preview</h3>
+          <iframe id="preview" class="preview" sandbox="allow-scripts allow-same-origin allow-modals"></iframe>
+        </div>
+      </div>
+    </aside>
+
+  </main>
+
+  
+  
+  
+  
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.32.0/ace.js"></script>
+<script src="script.js"></script>
+
+
+</body>
+</html>
