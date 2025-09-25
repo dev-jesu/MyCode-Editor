@@ -196,7 +196,7 @@ function loadProject(obj){
 
 
 function setDefaultContent(){
-  ed_html.setValue(`<!-- Simple Code Editor -->
+  ed_html.setValue(`
 <section class="card" style="max-width:520px;margin:24px auto;padding:18px;text-align:center">
   <h1>Hello World 👋</h1>
   <p>This is your online code editor. Edit HTML, CSS, and JS to see changes live.</p>
@@ -304,3 +304,8 @@ window.addEventListener('DOMContentLoaded', () => {
     log('Skipping auto-restore: ' + e, 'warn');
   }
 });
+
+window.addEventListener("load", () => {
+  document.getElementById("loader").style.display = "none";
+});
+

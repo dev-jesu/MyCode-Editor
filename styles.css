@@ -16,6 +16,7 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
+    font-family:"Fira Code", monospace;
 }
 
 html,body{
@@ -51,10 +52,10 @@ header{
 }
 
 .brand .logo{
-    inline-size: 36px;
-    block-size: 36px;
-    border-radius: 10px;
-    background:url( "hbnj.png")
+    inline-size: 48px;
+    block-size: 48px;
+    border-radius: 25px;
+    background:url( "logo.png")
     center/cover no-repeat;
 }
 
@@ -189,23 +190,41 @@ iframe.preview {
 
 
 .ace_editor {
-  background: #0f1221 !important;   /* match your page background */
-  color: #d4d4d4 !important;        /* default text color (soft gray) */
+  background: #0f1221 !important;   
+  color: #d4d4d4 !important;   
+  font-size: 16px;     
+  line-height: 1.5;
 }
 
 .ace_gutter {
-  background: #0f1221 !important;   /* gutter (line numbers) also blend */
-  color: #6c6f93 !important;        /* line numbers color */
+  background: #0f1221 !important;   
+  color: #6c6f93 !important;        
 }
 
 .ace_cursor {
-  color: #ffcc00 !important;        /* cyberpunk yellow cursor */
+  color: #ffcc00 !important;        
 }
 
 .ace_marker-layer .ace_active-line {
-  background: rgba(255, 255, 255, 0.05) !important; /* subtle highlight */
+  background: rgba(255, 255, 255, 0.05) 
 }
 
 .ace_marker-layer .ace_selection {
-  background: rgba(0, 255, 255, 0.2) !important; /* neon cyan selection */
+  background: rgba(0, 255, 255, 0.2) 
+}
+
+.ace_loading, .ace_authenticating {
+  display: none !important;
+}
+
+#loader {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0d0221;
+  color: #7dd3fc;
+  font-size: 20px;
+  font-family: monospace;
 }
