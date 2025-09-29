@@ -55,7 +55,7 @@ header{
     inline-size: 48px;
     block-size: 48px;
     border-radius: 25px;
-    background:url( "logo.png")
+    background:url( "Assests/logo.png")
     center/cover no-repeat;
 }
 
@@ -213,18 +213,4 @@ iframe.preview {
   background: rgba(0, 255, 255, 0.2) 
 }
 
-.ace_loading, .ace_authenticating {
-  display: none !important;
-}
 
-#loader {
-  position: fixed;
-  inset: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #0d0221;
-  color: #7dd3fc;
-  font-size: 20px;
-  font-family: monospace;
-}

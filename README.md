@@ -17,9 +17,9 @@ It lets you write code in separate tabs, run it instantly in a live preview, and
 ---
 
 ## 🚀 Demo
-🔗 [Live on Vercel](https://your-vercel-link.vercel.app/)  
+🔗 [Live on Vercel](https://my-code-editor-kmexi3997-jesu-2005s-projects.vercel.app/)  
 
-![Screenshot](./screenshot.png)
+![Screenshot](Assets/Screenshot.png)
 
 ---
 
